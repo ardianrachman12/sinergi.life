@@ -44,7 +44,7 @@
         <div x-data="{ open: false, mobileMenu: false }"
           class="relative flex flex-col items-start max-w-[1200px] pb-10">
           <div class="relative z-30 flex w-full h-auto pt-5 max-xl:px-4 justify-between">
-            <a href="" class="flex flex-row justify-center items-center gap-[14px] md::gap-5">
+            <a href="/" class="flex flex-row justify-center items-center gap-[14px] md::gap-5">
               <img src="images/Logo.png" alt="Logo" class="w-[33px] md:w-auto" />
               <p class="text-[#FFFFFF] lg:text-xl text-[16px] font-[700] opacity-95">
                 Sinergi Life
@@ -88,7 +88,7 @@
             x-transition:leave="transition ease-in duration-300"
             x-transition:leave-start="opacity-100 transform translate-y-0"
             x-transition:leave-end="opacity-0 transform -translate-y-4"
-            class="lg:hidden fixed top-[60px] inset-0 z-40 bg-[#F5F3FF] bg-opacity-95 p-4 h-fit m-4 rounded-lg shadow-lg">
+            class="lg:hidden fixed top-[60px] inset-0 z-50 bg-[#F5F3FF] bg-opacity-95 p-4 h-fit m-4 rounded-lg shadow-lg">
             <div class="flex flex-col items-center gap-2 text-[20px] text-[#151517]">
               <a href="" @click="mobileMenu = false"
                 class="font-[700] underline underline-offset-8 decoration-2 decoration-amber-500 py-2">Beranda</a>
@@ -115,7 +115,7 @@
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1280px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
                       alt="English" class="w-5" />
-                    <a href="eng.html">English</a>
+                    <a href="/">English</a>
                   </div>
                 </div>
               </div>
@@ -135,7 +135,7 @@
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1280px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
                   class="w-[20px]" alt="Indonesia" />
-                <a href="eng.html">English</a>
+                <a href="/">English</a>
               </div>
             </div>
             <p class="text-[32px] lg:text-[50px] font-[700] text-center lg:leading-[58px] lg:px-8">
@@ -160,7 +160,7 @@
       <div class="z-30 flex mb-0 xl:mb-[240px]">
         <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-4 text-[#151517]">
           <div class="w-auto bg-[#F5F3FF] px-7 py-5">
-            <img src="images/mentor.png" alt="Mentor" />
+            <img class="w-[60px] md:w-auto" src="images/mentor.png" alt="Mentor" />
             <p class="text-[20px] font-[700] py-2">100+ Mentor Berpengalaman</p>
             <p class="text-[16px] font-[400] text-[#151517]/[0.8]">
               Belajar langsung dari para profesional industri melalui sesi tanya jawab
@@ -168,7 +168,7 @@
             </p>
           </div>
           <div class="w-auto bg-[#F5F3FF] px-7 py-5">
-            <img src="images/flexible.png" alt="Flexible" />
+            <img class="w-[60px] md:w-auto" src="images/flexible.png" alt="Flexible" />
             <p class="text-[20px] font-[700] py-2">
               Pembelajaran Fleksibel - Kapanpun dan Dimanapun
             </p>
@@ -179,7 +179,7 @@
             </p>
           </div>
           <div class="w-auto bg-[#F5F3FF] px-7 py-5">
-            <img src="images/project.png" alt="Project" />
+            <img class="w-[60px] md:w-auto" src="images/project.png" alt="Project" />
             <p class="text-[20px] font-[700] py-2">
               Pembelajaran Berbasis Proyek Dunia Nyata
             </p>
@@ -189,7 +189,7 @@
             </p>
           </div>
           <div class="w-auto bg-[#F5F3FF] px-7 py-5">
-            <img src="images/moneyback.png" alt="Money" />
+            <img class="w-[60px] md:w-auto" src="images/moneyback.png" alt="Money" />
             <p class="text-[20px] font-[700] py-2">
               Jaminan Pengembalian Uang 100%
             </p>
@@ -247,7 +247,7 @@
     </div>
 
     <!-- Trusted by Companies -->
-    <div class="max-w-[1200px] h-auto mx-auto px-4 lg:px-0 pt-[50px] pb-[50px] lg:pb-[100px] justify-center items-center" id="work">
+    <div class="max-w-[1200px] w-full h-auto mx-auto px-4 lg:px-0 pt-[50px] pb-[50px] lg:pb-[100px] justify-center items-center" id="work">
       <div class="w-full flex flex-col">
         <p class="text-[24px] lg:text-[40px] font-[700] max-md:pb-8 pb-16 text-center">
           Dipercaya oleh 100+ Perusahaan dan Lembaga Terkemuka
@@ -410,8 +410,8 @@
 
 
     <!-- English Vit -->
-    <div class="flex max-lg:flex-col max-w-[1200px] h-auto m-auto justify-center items-center max-xl:px-4 py-[50px] gap-5">
-      <img src="images/englishvitt.png" alt="English Vit" class="max-w-[380px] lg:max-w-none" />
+    <div class="flex max-lg:flex-col max-w-[1200px] h-auto justify-center items-center md:mx-auto px-4 xl:px-0 py-[50px] gap-5">
+      <img src="images/englishvitt.png" alt="English Vit" class="max-w-[350px] lg:max-w-none" />
       <div class="w-full flex flex-col justify-center max-lg:items-start gap-5 lg:pl-10">
         <img src="images/englishvitlogo.png" alt="English Vit Logo" class="self-start max-w-[128px] lg:max-w-none" />
         <p class="text-[32px] xl:text-[40px] leading-[55px] font-bold">
@@ -446,14 +446,14 @@
         </div>
         <a href=""
           class="text-[16px] lg:text-[18px] text-[#6D28D9] font-light self-start hover:font-[600] hover:underline">
-          Pelajari Lebih Lanjut
+          Apply
         </a>
       </div>
     </div>
 
     <!-- Eduwork -->
     <div
-      class="flex max-lg:flex-col-reverse max-w-[1200px] h-auto m-auto justify-center items-center max-xl:px-4 py-[50px]">
+      class="flex max-lg:flex-col-reverse max-w-[1200px] h-auto justify-center items-center md:mx-auto px-4 xl:px-0 py-[50px]">
       <div class="w-full flex flex-col justify-center items-start gap-4 lg:pr-10 max-lg:pb-5">
         <img src="images/eduworklogo.png" alt="Eduwork Logo" class="self-start max-w-[105px] lg:max-w-none" />
         <p class="text-[32px] xl:text-[40px] leading-[55px] font-bold self-start font-bold">
@@ -489,10 +489,10 @@
         </div>
         <a href=""
           class="text-[16px] xl:text-[18px] text-[#6D28D9] font-light self-start hover:font-[600] hover:underline">
-          Pelajari Lebih Lanjut
+          Apply
         </a>
       </div>
-      <img src="images/eduworkk.png" alt="Eduwork" class="max-w-[380px] lg:max-w-none" />
+      <img src="images/eduworkk.png" alt="Eduwork" class="max-w-[350px] lg:max-w-none" />
     </div>
 
     <!-- Timeline Englishvit -->
@@ -968,7 +968,7 @@
                   </ul> -->
                   <button onclick="window.open('https://bit.ly/Join-SIA', '_blank')" type="button"
                     class="bg-[#6D28D9] text-[#FFFFFF] text-[14px] lg:text-[16px] font-[700] w-full py-4 mb-3 rounded-md hover:cursor-pointer hover:brightness-75">
-                    Pelajari Lebih Lanjut
+                    Apply
                   </button>
                 </div>
               </div>
@@ -992,7 +992,7 @@
                   </ul> -->
                   <button onclick="window.open('https://bit.ly/Join-SIA', '_blank')" type="button"
                     class="bg-[#6D28D9] text-[#FFFFFF] text-[14px] lg:text-[16px] font-[700] w-full py-4 mb-3 rounded-md place-self-end hover:cursor-pointer hover:brightness-75">
-                    Pelajari Lebih Lanjut
+                    Apply
                   </button>
                 </div>
               </div>
@@ -1016,7 +1016,7 @@
                   </ul> -->
                   <button onclick="window.open('https://bit.ly/Join-SIA', '_blank')" type="button"
                     class="bg-[#6D28D9] text-[#FFFFFF] text-[14px] lg:text-[16px] font-[700] w-full mb-3 py-4 rounded-md hover:cursor-pointer hover:brightness-75">
-                    Pelajari Lebih Lanjut
+                    Apply
                   </button>
                 </div>
               </div>
@@ -1040,7 +1040,7 @@
                   </ul> -->
                   <button onclick="window.open('https://bit.ly/Join-SIA', '_blank')" type="button"
                     class="bg-[#6D28D9] text-[#FFFFFF] text-[14px] lg:text-[16px] font-[700] w-full mb-3 py-4 rounded-md hover:cursor-pointer hover:brightness-75">
-                    Pelajari Lebih Lanjut
+                    Apply
                   </button>
                 </div>
               </div>
@@ -1064,7 +1064,7 @@
                   </ul> -->
                   <button onclick="window.open('https://bit.ly/Join-SIA', '_blank')" type="button"
                     class="bg-[#6D28D9] text-[#FFFFFF] text-[14px] lg:text-[16px] font-[700] w-full py-4 mb-3 rounded-md hover:cursor-pointer hover:brightness-75">
-                    Pelajari Lebih Lanjut
+                    Apply
                   </button>
                 </div>
               </div>
@@ -1088,7 +1088,7 @@
                   </ul> -->
                   <button onclick="window.open('https://bit.ly/Join-SIA', '_blank')" type="button"
                     class="bg-[#6D28D9] text-[#FFFFFF] text-[14px] lg:text-[16px] font-[700] w-full py-4 mb-3 rounded-md place-self-end hover:cursor-pointer hover:brightness-75">
-                    Pelajari Lebih Lanjut
+                    Apply
                   </button>
                 </div>
               </div>
@@ -1108,7 +1108,7 @@
                   </p>
                   <button onclick="window.open('https://bit.ly/Join-SIA', '_blank')" type="button"
                     class="bg-[#6D28D9] text-[#FFFFFF] text-[14px] lg:text-[16px] font-[700] w-full mb-3 py-4 rounded-md hover:cursor-pointer hover:brightness-75">
-                    Pelajari Lebih Lanjut
+                    Apply
                   </button>
                 </div>
               </div>
@@ -1134,7 +1134,7 @@
                   </ul> -->
                   <button onclick="window.open('https://bit.ly/Join-SIA', '_blank')" type="button"
                     class="bg-[#6D28D9] text-[#FFFFFF] text-[14px] lg:text-[16px] font-[700] w-full py-4 mb-3 rounded-md hover:cursor-pointer hover:brightness-75">
-                    Pelajari Lebih Lanjut
+                    Apply
                   </button>
                 </div>
               </div>
@@ -1158,7 +1158,7 @@
                   </ul> -->
                   <button onclick="window.open('https://bit.ly/Join-SIA', '_blank')" type="button"
                     class="bg-[#6D28D9] text-[#FFFFFF] text-[14px] lg:text-[16px] font-[700] w-full py-4 mb-3 rounded-md place-self-end hover:cursor-pointer hover:brightness-75">
-                    Pelajari Lebih Lanjut
+                    Apply
                   </button>
                 </div>
               </div>
@@ -1183,7 +1183,7 @@
                   </ul> -->
                   <button onclick="window.open('https://bit.ly/Join-SIA', '_blank')" type="button"
                     class="bg-[#6D28D9] text-[#FFFFFF] text-[14px] lg:text-[16px] font-[700] w-full mb-3 py-4 rounded-md hover:cursor-pointer hover:brightness-75">
-                    Pelajari Lebih Lanjut
+                    Apply
                   </button>
                 </div>
               </div>
@@ -1212,7 +1212,7 @@
                     </p>
                     <button type="button"
                       class="bg-[#6D28D9] text-[#FFFFFF] text-[14px] lg:text-[16px] font-[700] w-full py-4 rounded-md hover:cursor-pointer hover:brightness-75">
-                      Pelajari Lebih Lanjut
+                      Apply
                     </button>
                   </div>
                 </div>
@@ -1233,7 +1233,7 @@
                     </p>
                     <button type="button"
                       class="bg-[#6D28D9] text-[#FFFFFF] text-[14px] lg:text-[16px] font-[700] w-full py-4 rounded-md hover:cursor-pointer hover:brightness-75">
-                      Pelajari Lebih Lanjut
+                      Apply
                     </button>
                   </div>
                 </div>
@@ -1254,7 +1254,7 @@
                     </p>
                     <button type="button"
                       class="bg-[#6D28D9] text-[#FFFFFF] text-[14px] lg:text-[16px] font-[700] w-full py-4 rounded-md hover:cursor-pointer hover:brightness-75">
-                      Pelajari Lebih Lanjut
+                      Apply
                     </button>
                   </div>
                 </div>
@@ -1275,7 +1275,7 @@
                     </p>
                     <button type="button"
                       class="bg-[#6D28D9] text-[#FFFFFF] text-[14px] lg:text-[16px] font-[700] w-full py-4 rounded-md hover:cursor-pointer hover:brightness-75">
-                      Pelajari Lebih Lanjut
+                      Apply
                     </button>
                   </div>
                 </div>
@@ -1296,7 +1296,7 @@
                     </p>
                     <button type="button"
                       class="bg-[#6D28D9] text-[#FFFFFF] text-[14px] lg:text-[16px] font-[700] w-full py-4 rounded-md hover:cursor-pointer hover:brightness-75">
-                      Pelajari Lebih Lanjut
+                      Apply
                     </button>
                   </div>
                 </div>
@@ -1318,7 +1318,7 @@
                     </p>
                     <button type="button"
                       class="bg-[#6D28D9] text-[#FFFFFF] text-[14px] lg:text-[16px] font-[700] w-full py-4 rounded-md hover:cursor-pointer hover:brightness-75">
-                      Pelajari Lebih Lanjut
+                      Apply
                     </button>
                   </div>
                 </div>
@@ -1339,7 +1339,7 @@
                     </p>
                     <button type="button"
                       class="bg-[#6D28D9] text-[#FFFFFF] text-[14px] lg:text-[16px] font-[700] w-full py-4 rounded-md hover:cursor-pointer hover:brightness-75">
-                      Pelajari Lebih Lanjut
+                      Apply
                     </button>
                   </div>
                 </div>
